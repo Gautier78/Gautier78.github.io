@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Portfolio Gautier</title>
+    <title>Portfolio Gautier Lemaitre</title>
 
   </head>
 
@@ -20,44 +20,104 @@
 
 
 
-  <body>
+  <body style="background-color:#313B47">
     <!-- barre de navigation -->
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="">
-        Gautier Lemaitre
-     </a>
-    </nav>
+   
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light"  >
+        <a class="navbar-brand" href="#"></a>
+        <img src="img/GautierG.png" width="95" height="30" class="d-inline-block align-top" alt="" > 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#presentation">Présentation<span class="sr-only"  >(current)</span></a>
+            </li>
 
-
-
-    <!-- Image de moi et description -->
-    <h1><span class="badge badge-secondary" style="width: 14rem;
-                                             margin-left: 800px">
-        Présentation</span></h1>
-        <br>
-    <div class="card text-center text-white bg-dark mb-3"   style="width: 18rem;
-                                                            margin-left: 765px"
-    >
-        <img src="img/moi.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Qui suis-je?</h5>
-          <p class="card-text">Je suis Gautier, j'ai 19 ans et je suis actuellement en étude de développement web à l'Institut de l'Internet et du Multimédia à la Défense.</p>
-          <a href="#" class="btn btn-primary">Télécharger mon CV</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Expériences
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#experience">Etudes</a>
+                  <a class="dropdown-item" href="#experience">Stages</a>
+                  <a class="dropdown-item" href="#experience">Jobs</a>
+                 
+                </div>
+              </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="#projets">Projets</a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" tabindex="-1"aria-labelledby="true">Contacts</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+          
+          </form>
         </div>
-      </div>
-      <br><br><br><br><br><br><br><br>
+      </nav>
+
+
+     
+    <!-- Image de moi et description -->
+    <h2><span id="presentation" class="badge badge-secondary" style="background-color:#313B47;width: 14rem;
+      margin-left: 800px">
+</span></h2>
+<br>
+<br>
+<br>
+    <h1><span  class="badge badge-secondary" style="width: 14rem;
+                                             margin-left:850px">
+        Présentation</span></h1>
+        
+        <br>
+    
+
+
+      <div class="card rounded border-dark  " style="max-width: 1040px; height: 355px ;margin-left:450px ;margin-top:150px">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="img/moi.jpg" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body text-dark">
+                <h5 class="card-title">Qui suis-je?</h5>
+                <p class="card-text">Je suis Gautier, j'ai 19 ans et je suis actuellement en étude de développement web à l'Institut de l'Internet et du Multimédia à la Défense.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <a href="#" class="btn btn-outline-dark">Télécharger mon CV</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <br>
 
 
       <!-- Expériences -->
+      <h2><span id="experience" class="badge badge-secondary" style="background-color:#313B47;width: 14rem;
+        margin-left: 800px ;margin-top:250px">
+  </span></h2>
+  <br>
+  <br>
+  <br>
       <h1><span class="badge badge-secondary"    style="width: 14rem;
-                                                  margin-left: 800px">
+                                                  margin-left:850px;">
         Expériences</span></h1>
         <br>
 
-      <div class="card-deck ">
-        <div class="card text-white bg-dark mb-3">
+       
+      <div class="card-deck" style="width: 1600px; margin-top:230px; padding-left:330px;">
+        <div class="card rounded border-dark">
           
-          <div class="card-body">
+          <div class="card-body text-center">
             <h5 class="card-title">Etudes</h5>
             <p class="card-text">Durant mon année de Terminale S j'ai eu l'occasion d'avoir cours d'Informatique et sciences du numérique. J'y ai appris à coder en Python dans le but de créer un jeu.<br><br>
               Depuis 2019 je suis en cours à l'Institut de l'internet et du multimédia où je me suis orienté dans l'axe Développement Web.
@@ -65,33 +125,39 @@
             
           </div>
         </div>
-        <div class="card text-white bg-dark mb-3">
+        <div class="card rounded border-dark">
           
-          <div class="card-body">
+          <div class="card-body text-center">
             <h5 class="card-title">Stages</h5>
             <p class="card-text">Lors de ma première année à l'IIM j'ai effectué mon stage d'une durée de deux mois chez Envea Poissy. <br>Au cours de ce stage j'ai appris plus en profondeur PHP et MySQL.</p>
             
           </div>
         </div>
-        <div class="card text-white bg-dark mb-3">
+        <div class="card rounded border-dark">
           
-          <div class="card-body">
+          <div class="card-body text-center">
             <h5 class="card-title">Jobs</h5>
-            <p class="card-text">Je compte essayer de me lancer en free lance au cours de mon année, pour ça je regarde quotidiennement des formations en ligne pour améliorer mon niveau</p>
-
+            <p class="card-text">Je compte essayer de me lancer en free lance au cours de mon année, pour ça je regarde quotidiennement des formations en ligne pour améliorer mon niveau.</p>
+           
           </div>
         </div>
       </div>
-      <br><br><br><br><br><br><br><br>
+      <br>
 
     <!-- Carousel -->    
+    <h2><span id="projets" class="badge badge-secondary" style="background-color:#313B47;width: 14rem;
+      margin-left: 800px; margin-top: 200px;">
+</span></h2>
+<br>
+<br>
+<br>
     <h1><span class="badge badge-secondary"      style="width: 14rem;
-                                                  margin-left: 800px">
+                                                  margin-left: 850px">
       Projets</span></h1>
 <br>
 
       <div class="bd-example"  style="width: 80rem;
-                                      margin-left: 270px">
+                                      margin-left: 320px">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -100,7 +166,7 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img/morty.jpg." class="d-block w-100" alt="morty">
+              <img src="img/morty.jpg" class="d-block w-100" alt="morty">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Projet de fin d'année 2018-2019</h5>
                 <p>Pour valider notre année de cours en développement web nous avons dû créer un site web sur l'univers d'un personnage. Dans mon cas ce fût sur Rick & Morty.</p>
@@ -131,27 +197,32 @@
           </a>
         </div>
       </div>
-      <br><br><br><br><br><br><br><br>
+      <br>
 
 
       <!-- Liens -->
+      <h2><span id="contact" class="badge badge-secondary" style="background-color:#313B47;width: 14rem;
+        margin-left: 800px;">
+  </span></h2>
+  <br>
+  <br>
+  <br>
       <h1><span class="badge badge-secondary"    style="width: 14rem;
-                                                  margin-left: 800px">
+                                                  margin-left: 850px; ">
         Contact</span></h1>
         <br>
-      <a href="https://www.linkedin.com/in/gautier-lemaitre-639257182/ "><img src="img/linkedin.png" alt="linbedin" 
+      <div style="background-color:#313B47;width: 14px; margin-left: 834px; display:in-line;">
 
-                                                                                              style="width: 14rem;
-                                                                                                margin-left: 550px"/></a>
+      <a href="https://www.linkedin.com/in/gautier-lemaitre-639257182/ "><img src="img/linkedin.png" alt="linbedin" /></a>
       <a href="https://github.com/Gautier78"><img src="img/github.png" alt="github"/></a>
       <a href="https://gitlab.com/Gautier78"><img src="img/gitlab.png" alt="gitlab"/></a>
-
-      <br><br><br><br><br><br><br><br>
+    </div>
+      <br>
       
 
 
       <!-- Liens -->
-      <nav aria-label="Page navigation example">
+      <nav aria-label="Page navigation example" style=" margin-top: 00px;">
         <ul class="pagination justify-content-center">
           <li class="page-item disabled">
             <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
@@ -164,7 +235,7 @@
           </li>
         </ul>
       </nav>
-
+      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -172,4 +243,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
-
